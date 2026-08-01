@@ -2,25 +2,24 @@
 .DS_Store
 **/.DS_Store
 
-# JVM / Java compiled files
-*.class
-**/out/
+# Ignore everything by default
+*
 
-# IntelliJ IDEA project files
+# Do not ignore directories (to allow traversing)
+!**/
+
+# Specifically ignore development environment / build directories
 .idea/
-*.iml
+.vscode/
+**/out/
+**/bin/
 
-# Ignore compiled C++ binaries (files without an extension)
-# Under DP/
-DP/*
-!DP/*/
-!DP/*.*
+# Do not ignore Git configuration/ignore files
+!.gitignore
+!.gitattributes
 
-# Under DP/AtCoder/
-DP/AtCoder/*
-!DP/AtCoder/*/
-!DP/AtCoder/*.*
+# Do not ignore C++ source files
+!**/*.cpp
 
-# VS Code temp files
+# Ignore VS Code temp files
 *tempCodeRunnerFile*
-

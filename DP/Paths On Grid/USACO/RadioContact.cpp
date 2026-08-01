@@ -53,11 +53,11 @@ int main(){
 
     string js , bs ; // John and Bessie movement string . 
     cin >> js >> bs ;
-
-    for(int i=0;i<sz(js);i++){
+    
+    for(int i=0;i<n;i++){
         jl[i+1] = {jl[i].f + dx[md[js[i]]],jl[i].s + dy[md[js[i]]]} ;
     }
-    for(int i=0;i<sz(bs);i++){
+    for(int i=0;i<m;i++){
         bl[i+1] = {bl[i].f + dx[md[bs[i]]],bl[i].s + dy[md[bs[i]]]} ;
     }
     int dp[MX][MX] ;
